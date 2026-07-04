@@ -1,4 +1,4 @@
-# 🔄 OverTheWire Bandit: Level 13 ➡️ Level 14
+#  OverTheWire Bandit: Level 13 → Level 14
 
 ## 📝 Level Overview
 * **Objective:** Log into the `bandit14` account using the private SSH key stored on the server, then locate and secure the next level's password.

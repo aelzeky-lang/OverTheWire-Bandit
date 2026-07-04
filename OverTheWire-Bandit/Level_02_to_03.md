@@ -27,7 +27,7 @@ Leveraging the rev trick learned from previous research combined with path expan
 ```Bash
 rev ./--spaces\ in\ this\ filename-- | rev
 ```
-🧠 Concepts Learned
+## 🧠 Concepts Learned
 Handling Spaces: Escaping spaces using backslashes \ or wrapping filenames in double quotes " ".
 
 Command Adaptability: Reapplying alternative utilities like rev to bypass standard command restrictions.

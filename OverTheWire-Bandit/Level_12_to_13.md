@@ -42,14 +42,14 @@ Reconstruct the raw compressed payload using the reverse hex flag:
 xxd -r data.txt > datafile
 ```
 ### Step 3: Peeling the Decompression Layers
-Every extraction layer is audited using the file command to ensure the correct extraction tool and flags are chosen:
-Layer #,Current File,Detected Type (via file),Command Executed,Parameters Used,Resulting File
-Layer 1,datafile,gzip compressed data,mv datafile datafile.gz && gunzip datafile.gz,gunzip (No flags required once .gz is appended),datafile
-Layer 2,datafile,POSIX tar archive,mv datafile datafile.tar && tar -xf datafile.tar,"-x (Extract), -f (File target)",data5.bin
-Layer 3,data5.bin,POSIX tar archive (GNU),tar -xf data5.bin,"-x (Extract), -f (File target)",data6.bin
-Layer 4,data6.bin,bzip2 compressed data,mv data6.bin data6.bz2 && bunzip2 data6.bz2,bunzip2 (No flags required once .bz2 is appended),data6
-Layer 5,data6,POSIX tar archive,tar -xf data6,"-x (Extract), -f (File target)",data8.bin
-Layer 6,data8.bin,gzip compressed data,mv data8.bin data8.gz && gunzip data8.gz,gunzip (No flags required once .gz is appended),data8
+| Layer # | Current File | Detected Type (via file) | Command Executed | Parameters Used | Resulting File |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Layer 1** | `datafile` | `gzip compressed data` | `mv datafile datafile.gz && gunzip datafile.gz` | `gunzip` (No flags required once `.gz` is appended) | `datafile` |
+| **Layer 2** | `datafile` | `POSIX tar archive` | `mv datafile datafile.tar && tar -xf datafile.tar` | `-x` (Extract), `-f` (File target) | `data5.bin` |
+| **Layer 3** | `data5.bin` | `POSIX tar archive (GNU)` | `tar -xf data5.bin` | `-x` (Extract), `-f` (File target) | `data6.bin` |
+| **Layer 4** | `data6.bin` | `bzip2 compressed data` | `mv data6.bin data6.bz2 && bunzip2 data6.bz2` | `bunzip2` (No flags required once `.bz2` is appended) | `data6` |
+| **Layer 5** | `data6` | `POSIX tar archive` | `tar -xf data6` | `-x` (Extract), `-f` (File target) | `data8.bin` |
+| **Layer 6** | `data8.bin` | `gzip compressed data` | `mv data8.bin data8.gz && gunzip data8.gz` | `gunzip` (No flags required once `.gz` is appended) | `data8` |
 
 ###Step 4: Final Flag Extraction
 After stripping the final gzip wrapper, auditing the text stream reveals:

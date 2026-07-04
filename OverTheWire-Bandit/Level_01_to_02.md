@@ -21,7 +21,7 @@ The rev utility reverses the characters of lines. Interestingly, it treats - as 
 ```Bash
 rev - | rev
 ```
-🧠 Concepts Learned
+## 🧠 Concepts Learned
 Standard Input (stdin) Symbol: Understanding why - causes commands to wait for keyboard input.
 
 Input Redirection (<): How to force commands to take a file as input.

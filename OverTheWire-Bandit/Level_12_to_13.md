@@ -51,7 +51,7 @@ xxd -r data.txt > datafile
 | **Layer 5** | `data6` | `POSIX tar archive` | `tar -xf data6` | `-x` (Extract), `-f` (File target) | `data8.bin` |
 | **Layer 6** | `data8.bin` | `gzip compressed data` | `mv data8.bin data8.gz && gunzip data8.gz` | `gunzip` (No flags required once `.gz` is appended) | `data8` |
 
-###Step 4: Final Flag Extraction
+### Step 4: Final Flag Extraction
 After stripping the final gzip wrapper, auditing the text stream reveals:
 
 ```Bash

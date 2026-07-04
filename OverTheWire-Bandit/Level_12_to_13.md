@@ -1,4 +1,4 @@
-"""# Bandit Level 12 → Level 13 Base Documentation
+# Bandit Level 12 → Level 13 Base Documentation
 
 ## 📝 Level Description
 The password for the next level is stored in the file `data.txt`, which is a hex dump of a file that has been repeatedly compressed using multiple formats (`gzip`, `bzip2`, and `tar`). To solve this level, we must establish a volatile sandbox directory, reconstruct the binary file from its hexadecimal representation, and systematically decompress every layer by analyzing structural file headers.

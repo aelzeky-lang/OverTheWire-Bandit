@@ -26,7 +26,7 @@ Knowing this, we print its content directly:
 ```Bash
 cat ./-file07
 ```
-🧠 Concepts Learned
+## 🧠 Concepts Learned
 The file Command: A powerful utility to determine file types without opening them.
 
 Terminal Corruption & reset: Understanding why binary files mess up the CLI display and how to fix it.

@@ -35,3 +35,7 @@ View commit history: git log --oneline
 * [Bandit Level 8 → 9](OverTheWire-Bandit/Level_08_to_09.md) *(Concepts: Text Sorting, Advanced Uniq Filtering with -u)*
 * [Bandit Level 9 → 10](OverTheWire-Bandit/Level_09_to_10.md) *(Concepts: Binary String Extraction using strings, Pattern Matching)*
 * [Bandit Level 10 → 11](OverTheWire-Bandit/Level_10_to_11.md) *(Concepts: Data Encoding vs Encryption, Base64 Decoding)*
+* [Bandit Level 11 → 12](OverTheWire-Bandit/Level_11_to_12.md) *(Concepts: Caesar Cipher, ROT13 Obfuscation, Text Translation using `tr`)*
+* [Bandit Level 12 → 13](OverTheWire-Bandit/Level_12_to_13.md) *(Concepts: Reverse Engineering Hex Dumps (`xxd`), Multi-layered Decompression (`gzip`, `bzip2`, `tar`)*
+* [Bandit Level 13 → 14](OverTheWire-Bandit/Level_13_to_14.md) *(Concepts: Key-Based SSH Authentication, File Permissions (`chmod 600`), Cryptographic Error Troubleshooting, Data Exfiltration )*
+* [Bandit Level 14 → 15](OverTheWire-Bandit/Level_14_to_15.md) *(Concepts: Networking Basics, Localhost/Loopback (`127.0.0.1`), Network Ports, Raw Socket Data Transmission using Netcat (`nc`))*

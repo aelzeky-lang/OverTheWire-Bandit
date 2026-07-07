@@ -32,11 +32,12 @@ In a completely new terminal window, we establish a second SSH connection to `ba
 ```Bash
 ./suconnect 9999
 ```
-Step 3: The Handshake & Payload Delivery (Terminal 1)
+### Step 3: The Handshake & Payload Delivery (Terminal 1)
 Immediately after executing the binary in Terminal 2, we switch back to Terminal 1. Netcat indicates a successful connection from localhost.
 We paste the `bandit20` password into Terminal 1 and press `Enter`:
 ```Plaintext
-4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA```
+4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA
+```
 - Result: The binary validates the string, and the password for bandit21 is printed directly to the Netcat session in Terminal 1, after which the connection cleanly terminates.
 🧠 Key Concepts Learned & Real-World Applications
 1. The Client-Server Model

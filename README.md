@@ -79,8 +79,8 @@ Through 34 tiers of simulated environments, I successfully bypassed restricted u
 ## 📈 Next Deployment Grid
 Now that the Linux CLI & System Architecture fortress is fully secured, I am pivoting my offensive security framework toward:
 
-- The Second Front: Web Application Vulnerabilities & Exploitation (OverTheWire: Natas).
-
-- The Third Front: Binary Exploitation, Memory Corruption, and Reverse Engineering.
+- **The Second Front (Python Automation):** Forging custom security tooling, network scanners, and automation scripts using Python.
+- **The Third Front (System Hacking):** Active Directory breaching, Service-Side exploitation, and Privilege Escalation (TryHackMe & VulnHub).
+- **The Fourth Front (Binary Exploitation):** Low-Level Security, Reverse Engineering, and Memory Corruption (pwn.college & Advanced CTFs).
 
 "Never trust the environment; always audit the infrastructure."
